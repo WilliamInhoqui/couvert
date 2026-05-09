@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Couvert — Controle de Dívida</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0D1117;color:#fff;font-family:'Segoe UI',sans-serif;padding:16px;max-width:480px;margin:0 auto}
+h1{color:#00B4D8;font-size:1.15rem;text-align:center;padding:18px 0 4px;letter-spacing:.5px}
+.sub{color:#8D99AE;font-size:.78rem;text-align:center;margin-bottom:14px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.card{background:#161B22;border-radius:10px;padding:14px}
+.lbl{color:#8D99AE;font-size:.7rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:7px}
+.val{font-size:1.28rem;font-weight:700}
+.hint{color:#8D99AE;font-size:.68rem;margin-top:4px}
+.red{color:#FF4757}.green{color:#06D6A0}.yellow{color:#FFD60A}
+.orange{color:#FB8500}.blue{color:#48CAE4}
+.prog{background:#161B22;border-radius:10px;padding:14px;margin-bottom:10px}
+.bar{background:#21262D;border-radius:6px;height:16px;overflow:hidden;margin:10px 0 6px}
+.fill{background:#06D6A0;height:100%;border-radius:6px;width:0.99%}
+.binfo{display:flex;justify-content:space-between;font-size:.72rem}
+.alert{border-radius:10px;padding:13px;text-align:center;font-weight:700;margin-bottom:10px;font-size:.87rem}
+.ag{background:#003300;color:#06D6A0}
+.ay{background:#332200;color:#FFD60A}
+.ar{background:#330000;color:#FF4757}
+.cdown{background:#1C0A00;border-radius:10px;padding:12px;text-align:center;color:#FB8500;font-weight:700;margin-bottom:10px;font-size:.84rem}
+.sec{color:#48CAE4;font-size:.78rem;font-weight:700;margin:14px 0 8px;border-bottom:1px solid #21262D;padding-bottom:5px}
+table{width:100%;border-collapse:collapse;font-size:.78rem}
+th{background:#010409;color:#48CAE4;padding:8px 4px;font-size:.72rem}
+td{padding:8px 4px;text-align:center;border-bottom:1px solid #21262D}
+tr:nth-child(even) td{background:#1C2128}
+.footer{text-align:center;color:#555;font-size:.65rem;margin-top:22px;padding-bottom:20px}
+</style>
+</head>
+<body>
+<h1>🎵 COUVERT — CONTROLE DE DÍVIDA</h1>
+<p class="sub">📅 Atualizado em 09/05/2026 &nbsp;·&nbsp; 5 dias em operação</p>
+
+<div class="alert ag">✅  Em dia — lançamento registrado recentemente</div>
+
+<div class="g2">
+  <div class="card">
+    <div class="lbl">Dívida Inicial</div>
+    <div class="val red">R$ 76.179,72</div>
+  </div>
+  <div class="card">
+    <div class="lbl">Saldo Atual</div>
+    <div class="val orange">R$ 75.423,72</div>
+  </div>
+  <div class="card">
+    <div class="lbl">Total Abatido</div>
+    <div class="val green">R$ 756,00</div>
+    <div class="hint">↑ R$151,20/dia em média</div>
+  </div>
+  <div class="card">
+    <div class="lbl">Previsão de Quitação</div>
+    <div class="val orange">JUN/2028</div>
+    <div class="hint">estimativa com ritmo atual</div>
+  </div>
+</div>
+
+<div class="prog">
+  <div class="lbl">Progresso da Quitação</div>
+  <div class="bar"><div class="fill"></div></div>
+  <div class="binfo">
+    <span class="green">0.99% quitado</span>
+    <span style="color:#8D99AE">R$ 75.423,72 restante</span>
+  </div>
+</div>
+
+<div class="cdown">⏳ 37 dias para o próximo juros &nbsp;·&nbsp; vence 15/06/2026</div>
+
+<div class="g2">
+  <div class="card">
+    <div class="lbl">Abatido este Mês</div>
+    <div class="val green">R$ 756,00</div>
+    <div class="hint">6 lançamento(s) · May/2026</div>
+  </div>
+  <div class="card">
+    <div class="lbl">Estimativa Mensal</div>
+    <div class="val blue">R$ 3.780,00</div>
+    <div class="hint">média dos 6 dias registrados</div>
+  </div>
+</div>
+
+<div class="sec">⏱ Últimos Lançamentos</div>
+<table>
+<tr><th>DATA</th><th>PESSOAS</th><th>30% DÍVIDA</th><th>STATUS</th></tr>
+<tr><td>Sab 09/05</td><td>30</td><td class="yellow">R$ 135,00</td><td class="green">PAGO</td></tr>
+<tr><td>Sex 08/05</td><td>30</td><td class="yellow">R$ 135,00</td><td class="green">PAGO</td></tr>
+<tr><td>Qui 07/05</td><td>39</td><td class="yellow">R$ 175,50</td><td class="green">PAGO</td></tr>
+<tr><td>Qua 06/05</td><td>34</td><td class="yellow">R$ 153,00</td><td class="green">PAGO</td></tr>
+<tr><td>Ter 05/05</td><td>19</td><td class="yellow">R$ 85,50</td><td class="green">PAGO</td></tr>
+
+</table>
+
+<p class="footer">Couvert Financeiro · WilliamInhoqui · 09/05/2026</p>
+</body>
+</html>
